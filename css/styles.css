@@ -1,0 +1,42 @@
+/*Slide Zone*/
+
+.slider {
+	width: 100%;
+}
+
+.slide-zone {
+}
+
+.slide {
+	background-size: cover;
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.active-slide {
+	display: block;
+}
+
+.dots-zone {
+	display: inline-block;
+}
+
+.slider-dots {
+	list-style: none;
+}
+
+.slider-dots li {
+	color: #bbbcbc;
+	font-size: 30px;
+}
+
+.slider-dots .active-dot {
+	color: #363636;
+}
+
+.dot {
+	display: inline;
+}

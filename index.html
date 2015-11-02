@@ -5,18 +5,69 @@
     <title>AngularJS App</title>
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/libs/bootstrap.css" rel="stylesheet">
 
     <script src="bower_components/angular/angular.js"></script>
 
     <!-- include source files here... -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+    <script src="js/lib/jquery-2.1.1.js"></script>
     <script src="js/script.js"></script>
-
+    <script src="js/lib/bootstrap.js"></script>
 
   </head>
 
   <body ng-app="app">
 
-    <h1>{{ title }}</h1>
+	<!--This is the top part-->
+  	<div class="partUp slider">
+  		<div class="slide-zone">
+	  		<!--This is the first slide-->
+	  		<div class="slide active-slide">
+	  			<div class="container">
+	  				<div class="row">
+				  		<div class="col-md-1">
+				  			<img src="sketch/hardwell-01.png">
+				  		</div>
+			  		</div>
+		  		</div>
+	  		</div>
 
+	  		<!--This is the second slide-->
+	  		<div class="slide">
+	  			<div class="container">
+	  				<div class="row">
+				  		<div class="col-md-1">
+				  			<img src="sketch/shakira-01.png">
+				  		</div>
+			  		</div>
+		  		</div>
+	  		</div>
+
+	  		<!--This is the third slide-->
+	  		<div class="slide">
+	  			<div class="container">
+	  				<div class="row">
+				  		<div class="col-md-1">
+				  			<img src="sketch/u2-01.png">
+				  		</div>
+			  		</div>
+		  		</div>
+	  		</div>
+  		</div>
+
+  		<div class="dots-zone">
+	  		<ul class="slider-dots">
+		        <li class="dot active-dot">&bull;</li>
+		        <li class="dot">&bull;</li>
+		        <li class="dot">&bull;</li>
+	        </ul>
+        </div>
+  	</div>
+
+  	<!--<div ng-controller="PasswordController">
+		<h1>{{ title }}</h1>
+	</div>-->
   </body>
 </html>

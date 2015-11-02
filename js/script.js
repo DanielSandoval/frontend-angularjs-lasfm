@@ -14,3 +14,25 @@ angular.module('app', [])
     }
   };
 });
+
+$(document).ready(function() {
+  setInterval(function() {
+    //This is for the images functionality
+    var presentSlide = $(".active-slide");
+    var nextSlide = presentSlide.next();
+    //This is for the dots functionality
+    var presentDot = $(".active-dot");
+    var nextDot = presentDot.next();
+    //This go back to start when the image and the dot are in the last
+    if (nextSlide.length == 0) {
+      nextSlide = $(".slide").first();
+      nextDot = $(".dot").first();
+    };
+    //This is for the change of images
+    presentSlide.fadeOut(1000).removeClass("active-slide");
+    nextSlide.fadeIn(1000).addClass("active-slide");
+    //These are the dots functionality
+    presentDot.removeClass("active-dot");
+    nextDot.addClass("active-dot");
+  }, 2000);
+});
