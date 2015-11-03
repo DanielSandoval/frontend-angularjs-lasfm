@@ -34,5 +34,5 @@ $(document).ready(function() {
     //These are the dots functionality
     presentDot.removeClass("active-dot");
     nextDot.addClass("active-dot");
-  }, 2000);
+  }, 2500);
 });

@@ -1,35 +1,59 @@
+/*Part Up*/
 /*Slide Zone*/
 
 .slider {
 	width: 100%;
+	height: 336.5px;
+	padding-left: 10%;
+	padding-right: 10%;
+	background-color: black;
 }
 
 .slide-zone {
+	width: 100%;
+	height: 100%;
 }
 
 .slide {
-	background-size: cover;
+	width: 79.7%;
 	position: absolute;
 	display: none;
-	top: 0;
-	left: 0;
+	margin: 0 auto;
+}
+
+.space-image {
 	width: 100%;
+	height: 335px;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
 }
 
 .active-slide {
 	display: block;
 }
 
+/*Dot Zone*/
+
 .dots-zone {
 	display: inline-block;
+	position: absolute;
+	width: 80%;
+	height: 5%;
+	top: 45%;
 }
 
 .slider-dots {
 	list-style: none;
+	width: 100%;
+	height: 100%;
+	text-align: center;
 }
 
 .slider-dots li {
-	color: #bbbcbc;
+	color: white;
 	font-size: 30px;
 }
 
@@ -39,4 +63,44 @@
 
 .dot {
 	display: inline;
+}
+
+/*Part Down*/
+
+.partDown {
+	background-color: #FF0000;
+	position: absolute;
+	width: 100%;
+	height: 50%;
+}
+
+.partDown, p {
+	color: white;
+}
+
+.partDown input {
+	width: 225px;
+}
+
+.partDown button {
+	border: 1px solid black;
+	background-color: black;
+}
+
+.table-ingresar {
+	border-right: 1px solid white;
+	margin-top: 2%;
+}
+
+th, h1 {
+	text-align: center;
+}
+
+table, th, td {
+	width: 20%;
+}
+
+.table-perfil {
+	display: inline;
+	border: 1px solid white;
 }
