@@ -1,6 +1,7 @@
 // Javascript Code.
-angular.module('app', [])
-.controller('PasswordController', function PasswordController($scope) {
+var myApp = angular.module('app', ['ngRoute']);
+
+myApp.controller('PasswordController', function PasswordController($scope) {
   $scope.title = "This is AngularJS and Jasmin!";
   $scope.password = '';
   $scope.grade = function() {
