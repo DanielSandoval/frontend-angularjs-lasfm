@@ -4,7 +4,7 @@ var myApp = angular.module('app', ['ngRoute']);
 myApp.controller('PasswordController', function PasswordController($scope) {
   $scope.title = "This is AngularJS and Jasmin!";
   $scope.password = '';
-  $scope.grade = function() {
+  /*$scope.grade = function() {
     var size = $scope.password.length;
     if (size > 8) {
       $scope.strength = 'strong';
@@ -13,8 +13,43 @@ myApp.controller('PasswordController', function PasswordController($scope) {
     } else {
       $scope.strength = 'weak';
     }
-  };
+  };*/
 });
+
+myApp.config(function($routeProvider) {
+  $routeProvider
+    .when('/', {
+      templateUrl:'templates/login.html'
+    });
+});
+
+//myApp.config(function('routeProvider') {
+  //$routeProvider.when('/',{  
+    //controller: 'login.html'
+  //});
+  /*$routeProvider
+    .when('/', {
+      templateUrl: 'login.html'
+    })
+    .when('/list-songs', {
+      templateUrl: 'list-songs.html'
+    });*/
+    /*.otherwise({
+      redirectTo: '/'
+    });*/
+//});
+
+/*myApp.controller('loginCtrl', function($scope, $location) {
+  $scope.submit = function() {
+    var myEmail = $scope.my-email;
+    var password = $scope.password;
+    if ($scope.myEmail == 'admin' && $scope.password == 'admin') {
+      $location.path('/list-songs');
+    } else {
+      alert("Wrong");
+    }
+  };
+});*/
 
 $(document).ready(function() {
   setInterval(function() {
