@@ -1,18 +1,12 @@
-/*Part Up*/
-/*Slide Zone*/
-
 body {
 	background-color: red;
 }
 
-hr {
-	width: 1px;
-	height: 300px;
-	color: white;
-}
+/*Part Up*/
+/*Slide Zone*/
 
 .slider {
-	width: 100%;
+	/*width: 100%;*/
 	height: 336.5px;
 	padding-left: 10%;
 	padding-right: 10%;
@@ -20,7 +14,7 @@ hr {
 }
 
 .slide-zone {
-	width: 100%;
+	margin: 0 auto;
 	height: 100%;
 }
 
@@ -37,7 +31,7 @@ hr {
 }
 
 .image {
-	width: 100%;
+	width: 99%;
 	height: 100%;
 }
 
@@ -79,20 +73,14 @@ hr {
 
 .partDown {
 	background-color: #FF0000;
-	position: absolute;
-	width: 100%;
 	height: 50%;
 	padding-left: 20%;
 	padding-right: 20%;
-}
-
-.partDown, p {
 	color: white;
 }
 
-.partDown input {
+/*input {
 	width: 265px;
-	margin-bottom: 2%;
 	clear: right;
 	color: black;
 }
@@ -100,27 +88,26 @@ hr {
 .partDown button {
 	border: 1px solid black;
 	background-color: black;
+	color: white;
 }
 
-.table-ingresar {
-	border-right: 1px solid white;
-	margin-top: 2%;
-	float: left;
-}
-
-th, h1 {
+h1 {
 	text-align: center;
-}
+}*/
 
-.table-perfil {
-	float: right;
-	margin-top: 2%;
-}
-
-.first-form {
+/*.first-form {
 	float: left;
+}*/
+
+hr {
+	width: 1px;
+	height: 300px;
+	color: white;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	margin-top: 0;
 }
 
-.second-form {
+/*.second-form {
 	float: right;
-}
+}*/
