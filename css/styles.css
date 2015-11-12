@@ -5,9 +5,15 @@ body {
 /*Part Up*/
 /*Slide Zone*/
 
+.first-row {
+	position: absolute;
+	top: 0%;
+	background-size: cover;
+}
+
 .slider {
 	/*width: 100%;*/
-	height: 336.5px;
+	height: 316.5px;
 	padding-left: 10%;
 	padding-right: 10%;
 	background-color: black;
@@ -27,12 +33,15 @@ body {
 
 .space-image {
 	width: 100%;
-	height: 335px;
+	height: 100%;
+	margin: 0 auto;
 }
 
 .image {
 	width: 99%;
-	height: 100%;
+	height: 313px;
+	margin: 0 auto;
+	z-index: -1;
 }
 
 .active-slide {
@@ -42,18 +51,24 @@ body {
 /*Dot Zone*/
 
 .dots-zone {
-	display: inline-block;
+	/*display: inline-block;*/
 	position: absolute;
-	width: 80%;
-	height: 5%;
-	top: 45%;
+	/*width: 80%;*/
+	top: 288px;
+	/*bottom: 0%;*/
+	margin: 0 auto;
+	padding: 0%;
+	background-size: cover;
 }
 
 .slider-dots {
 	list-style: none;
-	width: 100%;
+	/*width: 100%;*/
 	height: 100%;
-	text-align: center;
+	margin: 0%;
+	padding: 0%;
+	/*text-align: center;*/
+	background-size: cover;
 }
 
 .slider-dots li {
@@ -74,9 +89,14 @@ body {
 .partDown {
 	background-color: #FF0000;
 	height: 50%;
-	padding-left: 20%;
-	padding-right: 20%;
+	/*padding-right: 20%;*/
 	color: white;
+}
+
+.prueba {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /*input {
@@ -99,15 +119,28 @@ h1 {
 	float: left;
 }*/
 
+.first-form {
+	display: inline-block;
+}
+
 hr {
 	width: 1px;
 	height: 300px;
 	color: white;
-	margin-left: 0 auto;
-	margin-right: 0 auto;
+	/*position: absolute;*/
+	/*margin-left: 0 auto;
+	margin-right: 0 auto;*/
+	margin-left: 80px;
+	margin-right: 80px;
 	margin-top: 0;
+	z-index: -1;
+	display: inline-block;
 }
 
 /*.second-form {
 	float: right;
 }*/
+
+.second-form {
+	display: inline-block;
+}
