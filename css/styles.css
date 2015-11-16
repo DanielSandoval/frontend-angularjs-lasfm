@@ -88,59 +88,148 @@ body {
 
 .partDown {
 	background-color: #FF0000;
-	height: 50%;
-	/*padding-right: 20%;*/
+	padding-left: 25%;
+	padding-right: 25%;
+	/*height: 50%;*/
 	color: white;
 }
 
-.prueba {
-	display: inline-block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/*input {
-	width: 265px;
+input {
+	width: 96%;
 	clear: right;
 	color: black;
 }
 
-.partDown button {
-	border: 1px solid black;
-	background-color: black;
+a {
+	text-decoration: none;
 	color: white;
 }
 
-h1 {
-	text-align: center;
-}*/
+.forget-pass {
+	margin-top: 36px;
+}
 
-/*.first-form {
-	float: left;
-}*/
+button {
+	border: 1px solid black;
+	background-color: black;
+	color: white;
+
+}
+
+.first-button {
+	margin-top: 25px;
+	margin-bottom: 5px;
+}
+
+.second-button {
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
 
 .first-form {
-	display: inline-block;
+	float: left;
+	width: 40%;
+}
+
+.line {
+	float: left;
+	width: 20%;
+	height: 100%;
 }
 
 hr {
 	width: 1px;
-	height: 300px;
+	height: 317px;
 	color: white;
-	/*position: absolute;*/
-	/*margin-left: 0 auto;
-	margin-right: 0 auto;*/
-	margin-left: 80px;
-	margin-right: 80px;
-	margin-top: 0;
-	z-index: -1;
-	display: inline-block;
 }
 
-/*.second-form {
-	float: right;
-}*/
-
 .second-form {
-	display: inline-block;
+	float: left;
+	width: 40%;
+}
+
+.to-center {
+	text-align: center;
+}
+
+@media (max-width: 1210px) {
+	.partDown {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+
+@media (max-width: 1020px) {
+	.partDown {
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+}
+
+@media (max-width: 875px) {
+	.partDown {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	.line {
+		width: 10%;
+	}
+	.first-form {
+		float: left;
+		width: 45%;
+	}
+	.second-form {
+		float: left;
+		width: 45%;
+	}
+}
+
+@media (max-width: 850px) {
+	.partDown {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+@media (max-width: 615px) {
+	.partDown {
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+	.line {
+		width: 5%;
+	}
+	.first-form {
+		float: left;
+		width: 47.5%;
+	}
+	.second-form {
+		float: left;
+		width: 47.5%;
+	}
+}
+
+@media (max-width: 530px) {
+	.line {
+		display: none;
+	}
+	.first-form {
+		float: left;
+		width: 100%;
+	}
+	.second-form {
+		float: left;
+		width: 100%;
+	}
+	.forget-pass {
+		margin-top: 10px;
+	}
+	.first-button {
+		margin-top: 0px;
+		margin-bottom: 10px;
+	}
+	.second-button {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
 }

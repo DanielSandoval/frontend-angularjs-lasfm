@@ -20,24 +20,11 @@ myApp.config(function($routeProvider) {
   $routeProvider
     .when('/', {
       templateUrl:'templates/login.html'
-    });
-});
-
-//myApp.config(function('routeProvider') {
-  //$routeProvider.when('/',{  
-    //controller: 'login.html'
-  //});
-  /*$routeProvider
-    .when('/', {
-      templateUrl: 'login.html'
     })
     .when('/list-songs', {
-      templateUrl: 'list-songs.html'
-    });*/
-    /*.otherwise({
-      redirectTo: '/'
-    });*/
-//});
+      templateUrl:'templates/list-songs.html'
+    });
+});
 
 /*myApp.controller('loginCtrl', function($scope, $location) {
   $scope.submit = function() {
@@ -71,4 +58,17 @@ $(document).ready(function() {
     presentDot.removeClass("active-dot");
     nextDot.addClass("active-dot");
   }, 2500);
+
+  //
+  $.ajax({
+    url: "http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=85b8c37b1a6be5182a5ed0549c4a7400&format=json",
+    dataType: "jsonp",
+    success: function(parsed_json) {
+      for (var song = 0; song < 50; song++) {
+        var songName = parsed_json['tracks']['track'][song]['name'];
+        $(".song-name").html(songName);
+      };
+      //var songName = parsed_json['tracks']['track'][0]['name'];
+    }
+  });
 });
