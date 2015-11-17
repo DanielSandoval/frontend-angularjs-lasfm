@@ -2,6 +2,7 @@ body {
 	background-color: red;
 }
 
+/*Login Style*/
 /*Part Up*/
 /*Slide Zone*/
 
@@ -86,11 +87,19 @@ body {
 
 /*Part Down*/
 
+/*.second-row {
+	background-color: yellow;
+	height: 100%;
+}*/
+
 .partDown {
-	background-color: #FF0000;
+	/*background-color: #FF0000;*/
+	/*background-color: red;*/
+	/*border: 5px solid red;*/
+	margin: 0;
 	padding-left: 25%;
 	padding-right: 25%;
-	/*height: 50%;*/
+	height: 344px;
 	color: white;
 }
 
@@ -232,4 +241,32 @@ hr {
 		margin-top: 20px;
 		margin-bottom: 10px;
 	}
+}
+
+/*Chart Style*/
+
+/*Top Chart Area*/
+
+.chart-area {
+	background-color: white;
+}
+
+.order-position {
+	text-align: center;
+	background-color: #2D8097;
+	color: black;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.table-chart {
+	width: 100%;
+}
+
+th {
+	background-color: #2D8097;
+}
+
+td {
+	background-color: #D4712B;
 }

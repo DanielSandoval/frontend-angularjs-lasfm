@@ -22,8 +22,24 @@ myApp.config(function($routeProvider) {
       templateUrl:'templates/login.html'
     })
     .when('/list-songs', {
-      templateUrl:'templates/list-songs.html'
+      templateUrl:'templates/list-songs.html',
+      controller: 'ChartController',
+      controllerAs: 'ChartCtrl'
     });
+});
+
+myApp.controller('ChartController', function($scope, $http) {
+  $http.get('http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=85b8c37b1a6be5182a5ed0549c4a7400&format=json')
+    .success(function(data){
+      $scope.listTracksInfo = data['tracks']['track'];
+      //$scope.imageUrl = data['tracks']['track'][0]['image'][0]['#text'];
+    })
+    .error(function(err) {
+      return err;
+    });
+  $scope.selectOrder = function(orderBy) {
+    $scope.typeOrder = orderBy;
+  };
 });
 
 /*myApp.controller('loginCtrl', function($scope, $location) {
@@ -58,17 +74,4 @@ $(document).ready(function() {
     presentDot.removeClass("active-dot");
     nextDot.addClass("active-dot");
   }, 2500);
-
-  //
-  $.ajax({
-    url: "http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=85b8c37b1a6be5182a5ed0549c4a7400&format=json",
-    dataType: "jsonp",
-    success: function(parsed_json) {
-      for (var song = 0; song < 50; song++) {
-        var songName = parsed_json['tracks']['track'][song]['name'];
-        $(".song-name").html(songName);
-      };
-      //var songName = parsed_json['tracks']['track'][0]['name'];
-    }
-  });
 });

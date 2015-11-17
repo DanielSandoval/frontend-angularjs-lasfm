@@ -1,2 +1,33 @@
 <p>Welcome user</p>
-<p class="song-name"></p>
+<div></div>
+<div class="chart-area">
+	<center>
+		<button class="order-position" ng-click="selectOrder('none')">Order by position</button>
+	</center>
+	<table class="table-chart">
+		<tr>
+			<th ng-click="selectOrder('name')">Song</th>
+			<th ng-click="selectOrder('artist.name')">Artist</th>
+			<th>Duration</th>
+			<th ng-click="selectOrder('playcount')">Playcount</th>
+			<th>Image</th>
+		</tr>
+		<tr ng-repeat="trackInfo in listTracksInfo | orderBy: typeOrder">
+			<td>
+				{{trackInfo.name}}
+			</td>
+			<td>
+				{{trackInfo.artist.name}}
+			</td>
+			<td>
+				{{trackInfo.duration}}
+			</td>
+			<td>
+				{{trackInfo.playcount}}
+			</td>
+			<td>
+				<img ng-src="{{trackInfo['image'][0]['#text']}}">
+			</td>
+		</tr>
+	</table>
+</div>
