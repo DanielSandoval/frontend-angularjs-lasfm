@@ -1,48 +1,37 @@
-body {
-	background-color: red;
+/*Login Style*/
+
+html, body{
+	margin: 0px;
+	width: 100%;
 }
 
-/*Login Style*/
 /*Part Up*/
 /*Slide Zone*/
 
-.first-row {
-	position: absolute;
-	top: 0%;
-	background-size: cover;
-}
-
-.slider {
-	/*width: 100%;*/
-	height: 316.5px;
+.partUp {
+	width: 80%;
+	height: 337px;
 	padding-left: 10%;
 	padding-right: 10%;
+	position: relative;
 	background-color: black;
 }
 
 .slide-zone {
-	margin: 0 auto;
+	width: 100%;
 	height: 100%;
 }
 
 .slide {
-	width: 79.7%;
+	width: 80%;
+	height: 337px;
 	position: absolute;
 	display: none;
-	margin: 0 auto;
-}
-
-.space-image {
-	width: 100%;
-	height: 100%;
-	margin: 0 auto;
 }
 
 .image {
-	width: 99%;
-	height: 313px;
-	margin: 0 auto;
-	z-index: -1;
+	width: 100%;
+	height: 100%;
 }
 
 .active-slide {
@@ -52,33 +41,29 @@ body {
 /*Dot Zone*/
 
 .dots-zone {
-	/*display: inline-block;*/
 	position: absolute;
-	/*width: 80%;*/
-	top: 288px;
-	/*bottom: 0%;*/
+	width: 80%;
+	bottom: 0%;
 	margin: 0 auto;
 	padding: 0%;
-	background-size: cover;
+	text-align: center;
 }
 
 .slider-dots {
 	list-style: none;
-	/*width: 100%;*/
 	height: 100%;
 	margin: 0%;
 	padding: 0%;
-	/*text-align: center;*/
 	background-size: cover;
 }
 
 .slider-dots li {
-	color: white;
+	color: #363636;
 	font-size: 30px;
 }
 
 .slider-dots .active-dot {
-	color: #363636;
+	color: white;
 }
 
 .dot {
@@ -87,19 +72,11 @@ body {
 
 /*Part Down*/
 
-/*.second-row {
-	background-color: yellow;
-	height: 100%;
-}*/
-
 .partDown {
-	/*background-color: #FF0000;*/
-	/*background-color: red;*/
-	/*border: 5px solid red;*/
-	margin: 0;
+	background-color: red;
 	padding-left: 25%;
 	padding-right: 25%;
-	height: 344px;
+	overflow: auto;
 	color: white;
 }
 
@@ -127,12 +104,12 @@ button {
 
 .first-button {
 	margin-top: 25px;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 }
 
 .second-button {
 	margin-top: 20px;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 }
 
 .first-form {
@@ -148,7 +125,7 @@ button {
 
 hr {
 	width: 1px;
-	height: 317px;
+	height: 320px;
 	color: white;
 }
 
@@ -169,6 +146,17 @@ hr {
 }
 
 @media (max-width: 1020px) {
+	.partUp {
+		width: 85%;
+		padding-left: 7.5%;
+		padding-right: 7.5%;
+	}
+	.slide {
+		width: 85%;
+	}
+	.dots-zone {
+		width: 85%;
+	}
 	.partDown {
 		padding-left: 15%;
 		padding-right: 15%;
@@ -176,9 +164,16 @@ hr {
 }
 
 @media (max-width: 875px) {
-	.partDown {
-		padding-left: 10%;
-		padding-right: 10%;
+	.partUp {
+		width: 90%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.slide {
+		width: 90%;
+	}
+	.dots-zone {
+		width: 90%;
 	}
 	.line {
 		width: 10%;
@@ -194,6 +189,17 @@ hr {
 }
 
 @media (max-width: 850px) {
+	.partUp {
+		width: 95%;
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+	}
+	.slide {
+		width: 95%;
+	}
+	.dots-zone {
+		width: 95%;
+	}
 	.partDown {
 		padding-left: 5%;
 		padding-right: 5%;
@@ -201,6 +207,17 @@ hr {
 }
 
 @media (max-width: 615px) {
+	.partUp {
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+	.slide {
+		width: 100%;
+	}
+	.dots-zone {
+		width: 100%;
+	}
 	.partDown {
 		padding-left: 0%;
 		padding-right: 0%;
@@ -219,6 +236,15 @@ hr {
 }
 
 @media (max-width: 530px) {
+	.partUp {
+		height: 250px;
+	}
+	.slide {
+		height: 250px;
+	}
+	input {
+		width: 97%;
+	}
 	.line {
 		display: none;
 	}
@@ -243,8 +269,22 @@ hr {
 	}
 }
 
-/*Chart Style*/
+@media (max-width: 400px) {
+	body {
+		font-size: 15.5px;
+	}
+	.partUp {
+		height: 190px;
+	}
+	.slide {
+		height: 190px;
+	}
+	.to-center {
+		font-size: 18px;
+	}
+}
 
+/*Chart Style*/
 /*Top Chart Area*/
 
 .chart-area {
@@ -253,6 +293,8 @@ hr {
 
 .order-position {
 	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
 	background-color: #2D8097;
 	color: black;
 	margin-top: 1%;
@@ -269,4 +311,8 @@ th {
 
 td {
 	background-color: #D4712B;
+}
+
+.change-cursor {
+	cursor: pointer;
 }

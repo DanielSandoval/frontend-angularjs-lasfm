@@ -1,4 +1,6 @@
 // Javascript Code.
+//Parse.initialize("o738tDIjX7Oq1jSB1PtSG6LfVeZqOgpaKH0pK3dt", "p7JfKdqPlYwWoenFcH1pnxR73YDzNaHAjz6iAwhq");
+
 var myApp = angular.module('app', ['ngRoute']);
 
 myApp.controller('PasswordController', function PasswordController($scope) {
@@ -27,6 +29,22 @@ myApp.config(function($routeProvider) {
       controllerAs: 'ChartCtrl'
     });
 });
+
+/*myApp.controller('MainController', function() {
+  var user = new Parse.User();
+  user.set("username", "danielsandoval");
+  user.set("password","123");
+  user.set("email", "danielsandoval@gmail.com");
+
+  user.signUp(null, {
+    success: function(user) {
+      alert("hola mundo");
+    },
+    error: function(user, error) {
+      alert("Ha habido un error en el Sign Up");
+    }
+  });
+});*/
 
 myApp.controller('ChartController', function($scope, $http) {
   $http.get('http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=85b8c37b1a6be5182a5ed0549c4a7400&format=json')
