@@ -34,4 +34,4 @@ sudo bower install
 3. What does dependency injection mean?
 
 ##You can see my page here
-##http://danielsandoval.github.io/frontend-angularjs-lasfm.
+http://danielsandoval.github.io/frontend-angularjs-lasfm.
